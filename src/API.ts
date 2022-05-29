@@ -7,6 +7,10 @@ export interface Question {
   type: string;
 }
 
+export interface Questions extends Question {
+  answers: string[];
+}
+
 export enum Difficulty {
   EASY = 'easy',
   MEDIUM = 'medium',
