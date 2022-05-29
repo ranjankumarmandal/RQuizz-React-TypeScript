@@ -2,6 +2,13 @@ import React, { useState } from 'react';
 import QuestionCard from './components/QuestionCard';
 import { fetchQuizQuestions, Difficulty, Questions } from './API';
 
+interface AnswerObject {
+  question: string;
+  answer: string;
+  correct: boolean;
+  correctAnswer: string;
+}
+
 const TOTAL_QUESTIONS = 10;
 
 function App() {
