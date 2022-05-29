@@ -1,5 +1,6 @@
 import React from 'react';
 import { AnswerObject } from '../App';
+import { Wrapper } from './QuestionCard.styles';
 
 interface Props {
   question: string;
@@ -19,7 +20,7 @@ const QuestionCard = ({
   totalQuestions,
 }: Props) => {
   return (
-    <div>
+    <Wrapper>
       <p className='number'>
         Question: {questionNr} / {totalQuestions}
       </p>
@@ -37,7 +38,7 @@ const QuestionCard = ({
           </div>
         ))}
       </div>
-    </div>
+    </Wrapper>
   );
 };
 
