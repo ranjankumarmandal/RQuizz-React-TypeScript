@@ -46,6 +46,9 @@ export const Wrapper = styled.div`
     text-align: center;
     margin: 20px;
   }
+  a {
+    text-decoration: none;
+  }
   .start,
   .next {
     cursor: pointer;

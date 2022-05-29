@@ -68,7 +68,15 @@ function App() {
     <>
       <GlobalStyle />
       <Wrapper>
-        <h1>REACT QUIZ</h1>
+        <h1>RANJAN QUIZ</h1>
+        <button className='start'>
+          <a
+            href='https://github.com/ranjankumarmandal/RQuizz-React-TypeScript'
+            target='_blank'
+          >
+            About
+          </a>
+        </button>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
           <button className='start' onClick={startTrivia}>
             Start
