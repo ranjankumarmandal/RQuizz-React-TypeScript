@@ -55,7 +55,13 @@ function App() {
     }
   };
 
-  const nextQuestion = () => {};
+  const nextQuestion = () => {
+    // move to the next question if not the last question
+    const nextQuestion = number + 1;
+    nextQuestion === TOTAL_QUESTIONS
+      ? setGameOver(true)
+      : setNumber(nextQuestion);
+  };
 
   return (
     <div className='App'>
